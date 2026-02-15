@@ -4,6 +4,7 @@ A full-stack web application that connects rural skills with communities. Built 
 
 ## Features
 
+- **User roles** – User (browse skills), Worker (list skills), Admin (manage platform)
 - **Authentication** – Sign up, log in, and sign out with Firebase Auth
 - **Firestore** – Store users, skills, and profiles
 - **Storage** – Upload profile photos and skill images
@@ -79,7 +80,11 @@ service firebase.storage {
 }
 ```
 
-### 5. Run the app
+### 5. Admin access
+
+To create an admin account, sign up and choose "Admin" role. Enter the invite code: `ruraladmin2024` (change this in `lib/constants.ts` for production).
+
+### 6. Run the app
 
 ```bash
 npm run dev
